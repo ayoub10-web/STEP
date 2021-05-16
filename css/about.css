@@ -1,0 +1,497 @@
+body,
+html {
+  height: 100%;
+  /*background-color: #425663;*/
+  background-color: rgb(250, 250, 250);
+  min-height: 1000px;
+  scroll-behavior: smooth;
+}
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  border-style: none;
+}
+
+section {
+  background-image: url("../images/about/bg3.jpg");
+  /* to fix the image in the page*/
+  height: 420px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+.domaines-titre h1{
+  color: rgb(243, 242, 242);
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 3rem;
+
+  padding-bottom: 20px;
+}
+.word h1{
+  text-decoration: underline  dotted ;
+  text-underline-offset: 0.2em;
+  text-decoration-color:#FEBF00;
+  text-decoration-thickness: 5px;
+  padding-bottom: 20px;
+  margin:10px 0 10px 0;
+}
+#logo-span {
+  color: #febf00;
+}
+#navigation a:hover {
+  color: #febf00;
+  transition: 0.4s;
+}
+#logo {
+  height: 85px;
+  display: flex;
+  padding-left: 50px;
+  align-items: center;
+}
+#logo img {
+  height: 60%;
+}
+#logo img.animate {
+  display: none;
+}
+#logo img.default {
+  display: inherit;
+}
+
+#logo2 {
+  display: flex;
+  width: 30%;
+  margin: 0;
+  padding: 0;
+}
+#logo2 img {
+  box-shadow: none;
+}
+.nav-active {
+  background-color: #fff;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+  height: 70px;
+}
+.nav-active #logo img.default {
+  display: none;
+}
+.nav-active #logo img.animate {
+  display: inherit;
+}
+.nav-active .mobile a {
+  color: black;
+}
+.nav-active1 a {
+  color: black;
+}
+#button1 {
+  background-color: #feae00;
+  box-shadow: 0 0 20px #feae00;
+  outline: none;
+  position: relative;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  display: block;
+  height: 50px;
+  width: 200px;
+  margin-top: 25px;
+  border-radius: 30px 30px 30px 30px;
+  border: none;
+  cursor: pointer;
+  transition: 0.6s;
+}
+#button1:hover {
+  background-color: #feae00;
+  box-shadow: 0 0 4px #feae00;
+}
+
+#type-effect {
+  color: #febf00;
+}
+.description {
+  color: white;
+  padding: 170px 0 0 50px;
+}
+.description p {
+  padding-top: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.line {
+  margin-top: 5px;
+  width: 8%;
+  border: 2px;
+  height: 4px;
+  background-color: #febf00;
+  border-radius: 20%;
+}
+.line1 {
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  width: 8%;
+  border: 2px;
+  height: 4px;
+  background-color: #febf00;
+  border-radius: 20%;
+}
+.titre {
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+}
+.para {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: grey;
+  font-size: 2.75vh;
+  font-family: "Lato", sans-serif;
+  margin: 50px;
+}
+.valeurs h1 {
+  font-size: 6vh;
+  margin-top: 100px;
+}
+.ceo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(241 241 235);
+  padding: 80px 0 80px 0;
+}
+.ceo img {
+  width: 25%;
+  margin-left: 50px;
+  border-radius: 50%;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+.parag {
+  font-size: 2.75vh;
+  font-family: "Lato", sans-serif;
+}
+.text {
+  padding: 0 30px 0 30px;
+  line-height: 1.5;
+}
+.word {
+  margin-left: 50px;
+}
+.word h1 {
+  font-size: 4vh;
+  font-family: "Ubuntu", sans-serif;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.word p {
+  color: grey;
+  line-height: 1.5;
+  font-family: "Lato", sans-serif;
+}
+/*footer*/
+.footer {
+  background-color: #414141;
+  width: 100%;
+  text-align: left;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 50px;
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* footer left*/
+
+.footer .footer-left {
+  width: 33%;
+  padding-right: 15px;
+}
+
+.footer .about {
+  line-height: 20px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer .about span {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer .icons {
+  margin-top: 25px;
+}
+
+.footer .icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/* footer center*/
+
+.footer .footer-center {
+  width: 30%;
+}
+
+.footer .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer .footer-center p a {
+  color: white;
+  text-decoration: none;
+}
+
+/* footer right*/
+
+.footer .footer-right {
+  width: 35%;
+}
+
+.footer h2 {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer h2 span {
+  color: #febf00;
+}
+
+.footer .menu {
+  color: #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer .menu a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+.name {
+  font-family: "Poppins", sans-serif;
+}
+
+.footer .menu a:hover {
+  color: #febf00;
+}
+
+.footer .name {
+  color: #febf00;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+@media (max-width: 1040px) {
+  #info {
+    padding-left: 50px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 867px) {
+  .footer {
+    font-size: 14px;
+  }
+  #info {
+    padding-left: 0;
+    font-size: 16px;
+  }
+  .footer .footer-left,
+  .footer .footer-center,
+  .footer .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .footer .footer-center i {
+    margin-left: 0;
+  }
+}
+
+/* Add a black background color to the top navigation */
+header {
+  position: fixed;
+  width: 100%;
+  height: 85px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  transition: 0.6s;
+  overflow: hidden;
+  padding-right: 30px;
+}
+#active {
+  color: #febf00;
+}
+.topnav .mobile {
+  width: 100%;
+}
+/* Style the links inside the navigation bar */
+.icon {
+  color: #febf00;
+}
+.active {
+  color: #febf00 !important;
+}
+.topnav a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  align-items: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: #febf00;
+  transition: 0.5s;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+  color: #febf00;
+}
+@media screen and (max-width: 700px) {
+  .ceo {
+    display: block;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .topnav .mobile {
+    display: none;
+  }
+  .topnav {
+    height: auto;
+    padding-right: 0;
+  }
+  .topnav div{
+    width: 100%;
+  }
+  #navbar-mobile {
+    display: flex;
+    align-items: center;
+  }
+  #navbar-mobile a {
+    display: flex;
+  }
+  .topnav a:hover {
+    color: #febf00;
+  }
+  #logo {
+    font-size: 1.2vw;
+  }
+  header {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .topnav.responsive {
+    position: fixed;
+    background-color: white;
+  }
+  .topnav.responsive .icon {
+    right: 0;
+    top: 0;
+    color: black;
+  }
+  .topnav.responsive .icon:hover {
+    color: #febf00;
+  }
+  .topnav.responsive #logo {
+    color: black;
+    padding-left: 10px;
+  }
+
+  .topnav.responsive #logo img.default {
+    display: none;
+  }
+  .topnav.responsive #logo img.animate {
+    display: inherit;
+  }
+  .topnav.responsive .mobile {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .topnav.responsive a {
+    color: black;
+  }
+  .topnav.responsive a:hover {
+    color: #febf00;
+  }
+  .topnav.responsive #navbar-mobile {
+  }
+}
